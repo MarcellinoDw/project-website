@@ -1,0 +1,147 @@
+/* Algemene stijl */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef; /* Zachtere achtergrondkleur */
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 10px; /* Minder spatie tussen links */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Content secties */
+.content {
+    display: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #4CAF50;
+    background-color: #f8f9fa; /* Lichtgrijs */
+    border-radius: 5px;
+    line-height: 1.6;
+}
+
+.content:first-of-type {
+    display: block;
+}
+
+/* Overige stijlen */
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulieren */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Media Query voor kleinere schermen */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .content {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Applicatie</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Mijn Applicatie</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('rekeningen')">Rekeningen</a></li>
+                <li><a href="#" onclick="showSection('overschrijvingen')">Overschrijvingen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Home -->
+        <section id="home" class="content">
+            <h2>Welkom op de Home-pagina</h2>
+            <p>Dit is een overzicht van je applicatie. Gebruik het menu hierboven om door de applicatie te navigeren.</p>
+        </section>
+
+        <!-- Rekeningen -->
+        <section id="rekeningen" class="content" style="display: none;">
+            <h2>Rekeningen</h2>
+            <p>Bekijk hier een overzicht van je rekeningen:</p>
+            <ul>
+                <li>Spaarrekening: €3.200</li>
+                <li>Betaalrekening: €1.500</li>
+                <li>Beleggingsrekening: €7.800</li>
+            </ul>
+        </section>
+
+        <!-- Overschrijvingen -->
+        <section id="overschrijvingen" class="content" style="display: none;">
+            <h2>Overschrijvingen</h2>
+            <p>Vul de onderstaande gegevens in om een overschrijving te doen:</p>
+            <form>
+                <label for="rekeningVan">Van:</label>
+                <input type="text" id="rekeningVan" placeholder="Rekeningnummer">
+                <br>
+                <label for="rekeningNaar">Naar:</label>
+                <input type="text" id="rekeningNaar" placeholder="Rekeningnummer">
+                <br>
+                <label for="bedrag">Bedrag (€):</label>
+                <input type="number" id="bedrag" placeholder="0.00">
+                <br>
+                <button type="submit">Verstuur</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mijn Applicatie</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
